@@ -45,16 +45,18 @@ public class PraLinearGradientView extends View {
 
         Shader shaderSweep = new SweepGradient(300,300,Color.parseColor("#E91E63"),
                 Color.parseColor("#2196F3"));*/
+        Bitmap bitmapIcon = BitmapFactory.decodeResource(getResources(),R.drawable.batman);
+        Shader shaderIcon = new BitmapShader(bitmapIcon,Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
 
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.batman_logo);
         Shader shaderBitmap = new BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
 
-        Bitmap bitmapIcon = BitmapFactory.decodeResource(getResources(),R.drawable.batman);
-        Shader shaderIcon = new BitmapShader(bitmapIcon,Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
 
-         Shader shader = new ComposeShader(shaderIcon,shaderBitmap, PorterDuff.Mode.SRC_OUT);
-
+       //   Shader shader = new ComposeShader(shaderIcon,shaderBitmap,PorterDuff.Mode.SRC_OVER);
+       //  Shader shader = new ComposeShader(shaderIcon,shaderBitmap,PorterDuff.Mode.DST_OUT);
+       //    Shader shader = new ComposeShader(shaderIcon,shaderBitmap,PorterDuff.Mode.DST_IN);
+        Shader shader = new ComposeShader(shaderIcon,shaderBitmap,PorterDuff.Mode.SRC);
          paint.setShader(shader);
-        canvas.drawCircle(300,300,300,paint);
+        canvas.drawCircle(300,300,200,paint);
     }
 }

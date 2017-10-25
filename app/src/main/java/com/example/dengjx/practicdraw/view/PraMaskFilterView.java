@@ -1,4 +1,4 @@
-package com.example.dengjx.practicdraw;
+package com.example.dengjx.practicdraw.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -11,6 +11,8 @@ import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.example.dengjx.practicdraw.R;
 
 /**
  * Created by dengjx on 2017/10/24.
@@ -39,7 +41,7 @@ public class PraMaskFilterView extends View {
         ColorFilter lightingColorFilter = new LightingColorFilter(0x00ffff, 0x000050);
         paint.setColorFilter(lightingColorFilter);
 
-        Bitmap bitmapIcon = BitmapFactory.decodeResource(getResources(),R.drawable.what_the_fuck);
+        Bitmap bitmapIcon = BitmapFactory.decodeResource(getResources(), R.drawable.what_the_fuck);
         canvas.drawBitmap(bitmapIcon,100,100,paint);
 
 

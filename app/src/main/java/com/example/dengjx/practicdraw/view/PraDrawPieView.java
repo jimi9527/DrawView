@@ -1,4 +1,4 @@
-package com.example.dengjx.practicdraw;
+package com.example.dengjx.practicdraw.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

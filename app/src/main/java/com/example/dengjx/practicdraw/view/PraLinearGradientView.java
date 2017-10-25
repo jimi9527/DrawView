@@ -1,4 +1,4 @@
-package com.example.dengjx.practicdraw;
+package com.example.dengjx.practicdraw.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,6 +16,8 @@ import android.graphics.SweepGradient;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.example.dengjx.practicdraw.R;
 
 /**
  * LinearGradientView
@@ -45,7 +47,7 @@ public class PraLinearGradientView extends View {
 
         Shader shaderSweep = new SweepGradient(300,300,Color.parseColor("#E91E63"),
                 Color.parseColor("#2196F3"));*/
-        Bitmap bitmapIcon = BitmapFactory.decodeResource(getResources(),R.drawable.batman);
+        Bitmap bitmapIcon = BitmapFactory.decodeResource(getResources(), R.drawable.batman);
         Shader shaderIcon = new BitmapShader(bitmapIcon,Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
 
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.batman_logo);

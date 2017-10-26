@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.dengjx.practicdraw.R;
+import com.example.dengjx.practicdraw.view.PraDrawClipView;
 import com.example.dengjx.practicdraw.view.PraDrawTextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    Button mbtnOne,mBtnTwo,mBtnThree;
+    Button mbtnOne,mBtnTwo,mBtnThree,mBtnFour;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,10 +19,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mbtnOne = (Button) findViewById(R.id.btn_pie);
         mBtnTwo = (Button) findViewById(R.id.btn_two);
         mBtnThree = (Button) findViewById(R.id.btn_three);
+        mBtnFour = (Button) findViewById(R.id.btn_four);
 
         mbtnOne.setOnClickListener(this);
         mBtnTwo.setOnClickListener(this);
         mBtnThree.setOnClickListener(this);
+        mBtnFour.setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_three:
                 startActivity(new Intent(this,PraDrawTextActivity.class));
+                break;
+            case R.id.btn_four:
+                startActivity(new Intent(this,PraDrawClipActivity.class));
                 break;
         }
     }

@@ -21,6 +21,8 @@
         <activity android:name=".ui.PraDrawTwoActivity"/>
         <activity android:name=".ui.PraDrawTextActivity"/>
         <activity android:name=".ui.PraDrawClipActivity"/>
+        <activity android:name=".ui.PraDrawFIveActivity"/>
+        <activity android:name=".ui.PraAnimaActivity"/>
     </application>
 
 </manifest>

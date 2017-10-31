@@ -23,4 +23,15 @@
         android:id="@+id/btn_four"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <Button
+        android:text="lesson5"
+        android:id="@+id/btn_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="lesson6"
+        android:id="@+id/btn_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

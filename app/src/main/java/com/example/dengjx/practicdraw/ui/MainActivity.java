@@ -11,7 +11,7 @@ import com.example.dengjx.practicdraw.view.PraDrawClipView;
 import com.example.dengjx.practicdraw.view.PraDrawTextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    Button mbtnOne,mBtnTwo,mBtnThree,mBtnFour;
+    Button mbtnOne,mBtnTwo,mBtnThree,mBtnFour,mBtnFive,mBtnSix;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +20,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnTwo = (Button) findViewById(R.id.btn_two);
         mBtnThree = (Button) findViewById(R.id.btn_three);
         mBtnFour = (Button) findViewById(R.id.btn_four);
+        mBtnFive = (Button) findViewById(R.id.btn_five);
+        mBtnSix = (Button) findViewById(R.id.btn_six);
 
         mbtnOne.setOnClickListener(this);
         mBtnTwo.setOnClickListener(this);
         mBtnThree.setOnClickListener(this);
         mBtnFour.setOnClickListener(this);
+        mBtnFive.setOnClickListener(this);
+        mBtnSix.setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +45,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_four:
                 startActivity(new Intent(this,PraDrawClipActivity.class));
+                break;
+            case R.id.btn_five:
+                startActivity(new Intent(this,PraDrawFIveActivity.class));
+                break;
+            case R.id.btn_six:
+                startActivity(new Intent(this,PraAnimaActivity.class));
                 break;
         }
     }
